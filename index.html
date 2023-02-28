@@ -30,6 +30,13 @@
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+  }
+      
+  .input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    }
   
 </style>
     
@@ -47,9 +54,9 @@
     <div style="height:200px;width:100%;padding:10px;border:1px solid black;margin:auto;box-shadow: 5px 5px 5px 5px; border-radius: 25px;">
       <form action="/action_page.php">
   <label for="fname">To:</label>
-  <input type="text" id="fname" name="fname"><br><br>
+  <input type="text" id="fname" name="fname" class="input"><br><br>
   <label for="lname">Amount:</label>
-  <input type="text" id="lname" name="lname"><br><br>
+  <input type="text" id="lname" name="lname" class="input"><br><br>
   <button type="submit" class="button">Send</button>
 </form>
     </div><br>
