@@ -45,10 +45,15 @@
     <h2>Remit</h2>
       <div/><br>
     <div style="height:200px;width:100%;padding:10px;border:1px solid black;margin:auto;box-shadow: 5px 5px 5px 5px; border-radius: 25px;">
-      To:<br>
-      Amount:<br>
-      <button type="button" class="button">Send</button>
+      <form action="/action_page.php">
+  <label for="fname">To:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Amount:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <button type="submit" class="button">Send</button>
+</form>
     </div><br>
+        
       <div class="table-responsive">
     <table class="table table-secondary caption-top align-middle text-center">
       <caption>Transactions</caption>
@@ -58,22 +63,22 @@
       <td>$1000</td>
       <td>1st December 2022<br>06:09 PM PST</td>
     </tr>
-    <tr>
+    <tr style="opacity:0.2;">
       <td>Margot Robbie</td>
       <td>$1000</td>
       <td>1st November 2022<br>04:20 PM PST</td>
     </tr>
-    <tr>
+    <tr style="opacity:0.2;">
       <td>Margot Robbie</td>
       <td>$1000</td>
       <td>1st October 2022<br>06:09 PM PST</td>
     </tr>
-    <tr>
+    <tr style="opacity:0.2;">
       <td>Margot Robbie</td>
       <td>$1000</td>
       <td>1st September 2022<br>04:20 PM PST</td>
     </tr>
-    <tr>
+    <tr style="opacity:0.2;">
       <td>Margot Robbie</td>
       <td>$1000</td>
       <td>1st August 2022<br>06:09 PM PST</td>
