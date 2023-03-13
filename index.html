@@ -1,109 +1,106 @@
 <!doctype html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Remit</title>
     
     <style>
       
-.button {
-  background-color: #D6AD60;
-  border: 1px solid black;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: auto;
-  cursor: pointer;
-  border-radius: 50px;
-  width: 100%;
-  outline: none;
-  box-shadow: 2.5px 2.5px 2.5px 2.5px #122620;
-}
+      .button {
+          background-color: #D6AD60;
+          color: black;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin-left: auto;
+          margin-right: auto;
+          cursor: pointer;
+          border-radius: 20px;
+          width: 100%;
+          outline: none;
+          border: none;
+        }
       
-.button:hover {background-color: #D6AD60}
-      
-.button:active {
-  background-color: #D6AD60;
-  box-shadow: 1.25px 1.25px 1.25px 1.25px #122620;
-  transform: translateY(5px);
-  }
-      
-  .input {
-    width: 100%;
-    padding: 5px 10px;
-    border: 1px solid black;
-    margin:auto;
-    box-shadow: 1.25px 1.25px 1.25px 1.25px #122620;
-    border-radius: 50px;">
-    }
+      .input {
+        width: 100%;
+        padding: 5px 10px;
+        border: 1px solid black;
+        margin:auto;
+        border-radius: 20px;
+        }
       
       .body {
-        font-family: 'Times New Roman', serif;
+        font-family: Arial, sans-serif;
         }
 
-</style>
+    </style>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
   </head>
   
   <body class="body">
-    <div style="height:100%; width:100%; padding: 10px;">
-      <div>
-    <img src="Logo v2.png" style="width:25px;height:25px;float:left;">
-    <img src="Profile.png" style="width:25px;height:25px;float:right;">
-    <h2 style="font-weight: 500;">Remit</h2>
-      <div/><br>
-        
-    <div style="height:300px;width:100%;padding:10px; border: 1px solid black; margin:auto; box-shadow: 5px 5px 5px 5px #122620; border-radius: 25px;">
-      <form action="/action_page.php"><br>
-  <label for="fname">To:</label><br>
-  <input type="text" id="fname" name="fname" class="input"><br><br>
-  <label for="lname">Amount:</label><br>
-  <input type="text" id="lname" name="lname" class="input"><br><br><br>
-  <button type="button" class="button"><h1 style="font-weight: 900;">Send</h1></button><br>
-</form>
-    </div><br>
-        
-      <div class="table-responsive">
-    <table class="table table-dark caption-top align-middle text-center">
-      <caption>Transactions</caption>
-  <tbody>
-    <tr>
-      <td>Margot Robbie</td>
-      <td>$1000</td>
-      <td>1st December 2022<br>06:09 PM PST</td>
-    </tr>
-    <tr style="opacity:0.8;">
-      <td>Margot Robbie</td>
-      <td>$1000</td>
-      <td>1st November 2022<br>04:20 PM PST</td>
-    </tr>
-    <tr style="opacity:0.8;">
-      <td>Margot Robbie</td>
-      <td>$1000</td>
-      <td>1st October 2022<br>06:09 PM PST</td>
-    </tr>
-    <tr style="opacity:0.8;">
-      <td>Margot Robbie</td>
-      <td>$1000</td>
-      <td>1st September 2022<br>04:20 PM PST</td>
-    </tr>
-    <tr style="opacity:0.8;">
-      <td>Margot Robbie</td>
-      <td>$1000</td>
-      <td>1st August 2022<br>06:09 PM PST</td>
-    </tr>
-  </tbody>
-</table>
-        </div>
+
+    <div style="height:100%; width:100%; padding: 0%; margin:0%;">
+
+      <div style="height:12%; width:98.4%; padding: 0.8%; margin:0%; position: absolute; top:0.8%; left:0.8%;">
+        <img src="Logo v2.png" style="width:50px; height:50px; float:left;">
+        <img src="Profile.png" style="width:50px; height:50px; float:right;">
+        <h1>Pay</h1>
       </div>
+
+      <div style="height:8%; width:96.8%; padding: 0.8%; margin:0%; position: absolute; bottom:78.4%; left:1.6%;"><h2>Your Transactions</h2></div>
+
+      <div style="height:44%; width:95.2%; padding: 0.8%; margin:0%; position: absolute; bottom:33.6%; left:2.4%; border: 1px solid black; border-radius: 20px;">
+        <table style="width:100%;">
+          <tbody>
+            <tr style="background-color: #F4EBD0;">
+              <td style="border-radius: 20px 0px  0px 20px; width:4%; text-align: center;"><img src="Profile.png" style="width:25px; height:25px;"></td>
+              <td style="border-radius: 0;">Tanishq Wadhwani<br>1st December 2022 at 09:00 PM PST</td>
+              <td style="border-radius: 0px 20px 20px 0px; width:20%; text-align: right;">$1000</td>
+            </tr>
+            <tr style="opacity: 0.8;">
+              <td style="width:4%; text-align: center;"><img src="Profile.png" style="width:25px; height:25px;"></td>
+              <td>Tanishq Wadhwani<br>1st November 2022 at 09:00 PM PST</td>
+              <td style="width:20%; text-align: right;">$1000</td>
+            </tr>
+            <tr style="opacity: 0.8;">
+              <td style="width:4%; text-align: center;"><img src="Profile.png" style="width:25px; height:25px;"></td>
+              <td>Tanishq Wadhwani<br>1st October 2022 at 09:00 PM PST</td>
+              <td style="width:20%; text-align: right;">$1000</td>
+            </tr>
+            <tr style="opacity: 0.8;">
+              <td style="width:4%; text-align: center;"><img src="Profile.png" style="width:25px; height:25px;"></td>
+              <td>Tanishq Wadhwani<br>1st September 2022 at 09:00 PM PST</td>
+              <td style="width:20%; text-align: right;">$1000</td>
+            </tr>
+            <tr style="opacity: 0.8;">
+              <td style="width:4%; text-align: center;"><img src="Profile.png" style="width:25px; height:25px;"></td>
+              <td>Tanishq Wadhwani<br>1st August 2022 at 09:00 PM PST</td>
+              <td style="width:20%; text-align: right;">$1000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        
+      <div style="height:32%; width:95.2%; padding: 0.8%; margin:0%; position: absolute; bottom: 0.8%; left:2.4%; border: 1px solid black; border-radius: 20px;">
+        <form action="/action_page.php">
+        <input type="text" id="fname" name="fname" class="input" placeholder="To:"><br><br>
+        <input type="text" id="lname" name="lname" class="input" placeholder="Amount:"><br><br>
+        <button type="button" class="button"><h3>Send</h3></button>
+        </form>
+      </div>
+          
+    </div>
       
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
       
   </body>
+
 </html>
